@@ -82,6 +82,6 @@ https://uj07096.tistory.com/53
 목표 : U-Net을 이용해 축구 경기 영상 내의 다양한 객체(예: 골대, 심판, 선수, 관중 등)를 픽셀 단위로 분할하는 Semantic Segmentation 작업을 수행했다. Custom한 U-Net과 ResNet 백본 교체를 한 모델을 비교하여 backbone의 유무효과를 비교했고, 또한 backbone의 weights인자를 이용해 사전학습 유무의 효과도 비교하였다.
 활용 데이터셋 : Kaggle의 Football (Semantic Segmentation) Dataset
 
-블로그 주소 :
+블로그 주소 :  
 https://uj07096.tistory.com/65  
 https://uj07096.tistory.com/66
