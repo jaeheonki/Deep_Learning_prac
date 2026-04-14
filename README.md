@@ -83,5 +83,5 @@ https://uj07096.tistory.com/53
 활용 데이터셋 : Kaggle의 Football (Semantic Segmentation) Dataset
 
 블로그 주소 :
-https://uj07096.tistory.com/65
+https://uj07096.tistory.com/65  
 https://uj07096.tistory.com/66
