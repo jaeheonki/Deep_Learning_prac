@@ -79,9 +79,26 @@ https://uj07096.tistory.com/53
 
 
 ## 7. Sementic_Segmentation_Football_Dataset
-목표 : U-Net을 이용해 축구 경기 영상 내의 다양한 객체(예: 골대, 심판, 선수, 관중 등)를 픽셀 단위로 분할하는 Semantic Segmentation 작업을 수행했다. Custom한 U-Net과 ResNet 백본 교체를 한 모델을 비교하여 backbone의 유무효과를 비교했고, 또한 backbone의 weights인자를 이용해 사전학습 유무의 효과도 비교하였다.
-활용 데이터셋 : Kaggle의 Football (Semantic Segmentation) Dataset
+목표 : U-Net을 이용해 축구 경기 영상 내의 다양한 객체(예: 골대, 심판, 선수, 관중 등)를 픽셀 단위로 분할하는 Semantic Segmentation 작업을 수행   
+활용 데이터셋 : Kaggle의 Football (Semantic Segmentation) Dataset  
+
+
+Custom한 U-Net과 ResNet 백본 교체를 한 모델을 비교하여 backbone의 유무효과를 비교했고, 또한 backbone의 weights인자를 이용해 사전학습 유무의 효과도 비교하였다.
 
 블로그 주소 :  
 https://uj07096.tistory.com/65  
 https://uj07096.tistory.com/66
+<br><br><br>
+
+
+## 8. GAN_Diffusion_prac
+목표 : 모델을 활용하여 FashionMNIST 데이터셋의 각 패션 아이템(예: 티셔츠, 바지, 스니커즈 등)을 조건부로 생성하는 작업을 수행  
+활용 데이터셋 : FashionMINST 데이터셋
+
+각 클래스에 해당하는 이미지를 생성하는 cGAN모델과, 추가로 Diffusion(LDM) 모델을 직접 설계하여(VAE, Time-Embedding, Latent U-Net, DDPM) 조건 추가 하는 방식을 One-Hot과 Embedding 방식을 비교하여 성능지표를 실험했고, 결과 이미지를 시각화는 것 까지 수행했다.  
+
+
+블로그 주소 :   
+https://uj07096.tistory.com/69  
+https://uj07096.tistory.com/70
+<br><br><br>
