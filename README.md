@@ -102,3 +102,16 @@ https://uj07096.tistory.com/66
 https://uj07096.tistory.com/69  
 https://uj07096.tistory.com/70
 <br><br><br>
+
+## 9. GRU_text_classification
+목표 : 텍스트 데이터를 입력으로 받아 뉴스의 카테고리를 예측하는 딥러닝 모델 구현  
+활용 데이터셋 : 활용 데이터셋 : sklearn.dataset의 fetch_20newsgroups 데이터셋  
+
+GRU, Bi-GRU, Bi-GRU+Attention 세 모델을 비교하며 20 Newsgroups 데이터셋으로 텍스트 분류를 수행하고, Optuna 및 Layer Normalization, 불용어 처리 등 다양한 방법으로 하이퍼파라미터 튜닝을 진행했다.  
+
+
+
+블로그 주소 :  
+https://uj07096.tistory.com/81  
+https://uj07096.tistory.com/82  
+<br><br><br>
