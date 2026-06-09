@@ -93,6 +93,17 @@ def main():
     number = get_next_number()
     section = build_readme_section(number, title, goal, dataset, description, blog_urls)
 
+    print("\n" + "=" * 50)
+    print("  미리보기")
+    print("=" * 50)
+    print(section)
+    print("=" * 50)
+
+    confirm = input("README에 추가할까요? (y/n): ").strip().lower()
+    if confirm != "y":
+        print("취소했습니다. README는 변경되지 않았습니다.")
+        return
+
     with open(README_PATH, "a", encoding="utf-8") as f:
         f.write(section)
 
@@ -100,7 +111,11 @@ def main():
 
     push = input("\ngit commit & push 할까요? (y/n): ").strip().lower()
     if push == "y":
-        subprocess.run(["git", "add", "README.md"], check=True)
+        files_to_add = ["README.md"]
+        notebook_file = f"{title}.ipynb"
+        if os.path.exists(notebook_file):
+            files_to_add.append(notebook_file)
+        subprocess.run(["git", "add"] + files_to_add, check=True)
         commit_msg = f"Update README: add {title}"
         subprocess.run(["git", "commit", "-m", commit_msg], check=True)
         subprocess.run(["git", "push", "origin", "main"], check=True)
