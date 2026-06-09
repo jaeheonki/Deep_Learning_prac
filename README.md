@@ -126,3 +126,15 @@ GRU 기반 Seq2Seq + Bahdanau Attention 모델과 직접 구현한 Transformer �
 블로그 주소 :  
 https://uj07096.tistory.com/89  
 <br><br><br>
+
+## 11. BERT_GPT_Document_Summarization
+목표 : PyTorch로 BERT(MLM+SOP 사전학습)와 GPT 언어 모델을 직접 구현하고 한국어 문서로 사전학습 수행  
+활용 데이터셋 : 코드잇 제공 한국어 뉴스 문서 요약 데이터셋 (Train 320,961개 / Val 39,298개)  
+
+KLUE-BERT 토크나이저를 활용해 BERT와 GPT를 처음부터 직접 구현하여 사전학습했다. BERT는 Segment Embedding 누락과 MLM/SOP 손실 스케일 불균형 문제를 디버깅하며 개선했고, GPT는 Greedy Decoding의 반복 패턴 문제를 Top-k + Temperature Sampling으로 완화했다. 최종 성능은 BERT MLM Perplexity 1,292 / SOP Accuracy 0.5084, GPT Perplexity 270 / BLEU 0.0322로, 소규모 데이터 학습의 한계를 실험적으로 확인했다.  
+
+
+블로그 주소 :  
+https://uj07096.tistory.com/93
+https://uj07096.tistory.com/94  
+<br><br><br>
