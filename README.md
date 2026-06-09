@@ -115,3 +115,14 @@ GRU, Bi-GRU, Bi-GRU+Attention 세 모델을 비교하며 20 Newsgroups 데이터
 https://uj07096.tistory.com/81  
 https://uj07096.tistory.com/82  
 <br><br><br>
+
+## 10. Seq2Seq_Transformer_Translation
+목표 : 한국어 문장을 영어로 번역하는 Seq2Seq + Attention, Transformer 모델을 직접 구현하고 성능 비교  
+활용 데이터셋 : 일상생활 및 구어체 한영 데이터셋 (코드잇 제공, Train 120만 / Val 15만 쌍)  
+
+GRU 기반 Seq2Seq + Bahdanau Attention 모델과 직접 구현한 Transformer 모델을 비교하여 한→영 기계번역 태스크를 수행했다. SentencePiece BPE 토크나이저를 한국어/영어 각각 별도로 학습시켰고, BLEU Score로 성능을 평가한 결과 Seq2Seq 0.1075, Transformer 0.2304로 Transformer가 더 자연스러운 번역 성능을 보였다.  
+
+
+블로그 주소 :  
+https://uj07096.tistory.com/89  
+<br><br><br>
